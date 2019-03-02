@@ -1,12 +1,13 @@
 
 import * as firebase from 'firebase'
-        // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyCf8RxQbsWj4OaxC1UzOE6HP1Vyv7Gf9-s",
-        authDomain: "onlineshopapp-315aa.firebaseapp.com",
-        databaseURL: "https://onlineshopapp-315aa.firebaseio.com",
-        projectId: "onlineshopapp-315aa",
-        storageBucket: "onlineshopapp-315aa.appspot.com",
-        messagingSenderId: "1045844146784"
-};
-export const firebaseApp = firebase.initializeApp(config);
+
+  var config = {
+    apiKey: "AIzaSyBQqRSXOsK0bVRfq1eeXe3B9z3JQx7jhjM",
+    authDomain: "appmobile-53164.firebaseapp.com",
+    databaseURL: "https://appmobile-53164.firebaseio.com",
+    projectId: "appmobile-53164",
+    storageBucket: "appmobile-53164.appspot.com",
+    messagingSenderId: "730430086814"
+  };
+
+  export const firebaseApp = firebase.initializeApp(config);

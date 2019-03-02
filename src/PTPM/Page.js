@@ -93,7 +93,7 @@ const RootStack = createStackNavigator(
 
     },
     {
-        initialRouteName: 'DanhMucSanPham',
+        initialRouteName: 'Login',
     },
 );
 
