@@ -9,15 +9,15 @@ const { width, height } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
     error: {
-        height: 60,
-        width: 450,
-        fontSize: 25,
+        height: 40,
+        width: 300,
+        fontSize: 15,
         borderColor: 'red',
         borderWidth: 2,
         backgroundColor: 'white',
     },
     style1: {
-        height: 60, width: 450, fontSize: 25, marginVertical: 5
+        height: 40, width: 300, fontSize: 15, marginVertical: 5
     },
     form: {
         justifyContent: 'center',
@@ -180,13 +180,13 @@ const styles = StyleSheet.create({
                     <View style={{ flexDirection: 'row', height: 80, marginTop: 5, justifyContent: 'center', alignItems: 'center' }}>
                         <View style={{ flex: 1 / 8, justifyContent: 'center', alignItems: 'center', }}>
                             <TouchableOpacity onPress={() => this.props.navigation.pop()}>
-                                <Image source={{ uri: "https://png.icons8.com/ios/2x/left.png" }} style={{ margin: 10, width: 40, height: 40 }} />
+                                <Image source={{ uri: "https://png.icons8.com/ios/2x/left.png" }} style={{ margin: 10, width: 30, height: 30 }} />
                             </TouchableOpacity>
                         </View>
 
 
                         <View style={{ flex: 7 / 8, justifyContent: 'center', alignItems: 'center' }}>
-                            <Text style={{ fontSize: 30, color: 'black', height: 50 }}></Text>
+                            <Text style={{ fontSize: 25, fontWeight: 'bold', color: '#000000', paddingBottom: 10 }}>Create an account</Text>
                         </View>
 
 
@@ -196,8 +196,8 @@ const styles = StyleSheet.create({
                 <View style={{ flex: 10 / 11 }}>
 
                     <View style={{ flex: 1, justifyContent: 'flex-end', alignItems: 'center', marginBottom:30 }}>
-                        <Text style={{ fontSize: 40, fontWeight: 'bold', color: '#000000', paddingBottom: 10 }}>Create an account</Text>
-                        <View style={{ height: 60, width: 450, fontSize: 25, backgroundColor: 'white', borderRadius: 30, marginTop:30 }}>
+                        <Text style={{ fontSize: 25, fontWeight: 'bold', color: '#000000', paddingBottom: 10 }}></Text>
+                        <View style={{ height: 40, width: 300,  backgroundColor: 'white', borderRadius: 30, marginTop:30 }}>
                             <TextInput 
                                 style={[(shouldMarkError('email') ? styles.error : styles.style1)]}
                                 placeholder={'E-mail'} value={this.state.email}
@@ -205,7 +205,7 @@ const styles = StyleSheet.create({
                                 onBlur={this.handleBlur('email')}
                                 underlineColorAndroid='transparent'/>
                         </View>
-                        <View style={{ height: 60, width: 450, fontSize: 25, backgroundColor: 'white', borderRadius: 30, marginTop: 30  }}>
+                        <View style={{ height: 40, width: 300,  backgroundColor: 'white', borderRadius: 30, marginTop: 30  }}>
                             <TextInput
                             style={[(shouldMarkError('password') ? styles.error : styles.style1)]}
                             placeholder={'Password'} secureTextEntry={true}
@@ -213,7 +213,7 @@ const styles = StyleSheet.create({
                                 onBlur={this.handleBlur('password')}
                                 underlineColorAndroid='transparent'/>
                         </View>
-                        <View style={{ height: 60, width: 450, fontSize: 25, backgroundColor: 'white', borderRadius: 30,marginTop: 30  }}>
+                        <View style={{ height: 40, width: 300, backgroundColor: 'white', borderRadius: 30,marginTop: 30  }}>
                             <TextInput
                                     style={[(shouldMarkError('retypePassword') ? styles.error : styles.style1)]} 
                                 placeholder={'Retype Password'} secureTextEntry={true}
@@ -228,10 +228,10 @@ const styles = StyleSheet.create({
                     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', marginTop: 30 }}>
                         <TouchableOpacity
                             disabled={isDisabled}
-                                style={{ height: 60, width: 250, backgroundColor: '#00405d', marginBottom: 10, borderRadius: 30 }}
+                                style={{ height: 40, width: 200, backgroundColor: '#00405d', marginBottom: 10, borderRadius: 20 }}
                             onPress={() => this.Register()}>
                                 <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                                    <Text style={{ color: 'white', fontWeight: 'bold', fontSize: 25 }}>CONFIRM</Text>
+                                    <Text style={{ color: 'white', fontWeight: 'bold', fontSize: 18 }}>CONFIRM</Text>
                             </View>
                         </TouchableOpacity>
                     </View>

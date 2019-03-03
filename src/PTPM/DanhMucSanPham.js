@@ -255,7 +255,7 @@ export default class DanhMucSanPham extends Component {
                                         })
                                     }} >
                                         <Image
-                                            style={{ width: width / 2 - 20, height: height * 3 / 10 }}
+                                            style={{ width: width / 2 - 20, height: height * 3 / 10, marginTop:5 }}
                                             source={{ uri: item.Link }}
                                         />
                                         <Text numberOfLines={1} style={{ flex: 1, color: 'black', fontSize: 20, marginTop: 10 }}> {item.TenSP}</Text>
